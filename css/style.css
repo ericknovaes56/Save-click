@@ -1,0 +1,355 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+}
+body{
+    background-color: #222121;
+}
+body::-webkit-scrollbar{
+    width: 1px;
+    background-color: black;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: cyan;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    background-image: url(../img/n1.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    width: 100%;
+}
+.n11{
+    width: 250px;
+    height: 250px;
+    font-size: 30px;
+    outline: none;
+    border-radius: 50%;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    color: white;
+    background-color:cyan;
+}
+#escreve{
+    color: white;
+    margin-top: 15px;
+}
+.n1{
+    width: 350px;
+    height: 45px;
+    background-color: rgb(31, 87, 87);
+    outline: none;
+    border: 1px solid rgb(31, 87, 87);
+    transition: background-color .6s ease , border .6s ease;
+    margin-top: 20px;
+}
+.n2{
+    margin-top: 5px;
+}
+.n1:hover{
+    background-color: cyan;
+    border: 1px solid cyan;
+}
+.caixa{
+    position: fixed;
+    width: 752px;
+    height: 444px;
+    background-color: rgba(45, 55, 58, 0.938);
+    border-radius: 10px;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
+    z-index: 3;
+}
+.caixa::-webkit-scrollbar{
+    display: none;
+}
+.img{
+    width: 150px;
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0.384);
+    border: 1px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+    background-position: center center;
+    background-size: cover;
+    object-fit: cover;
+}
+.dir , .esc{
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.n6{
+    width: 300px;
+    height: 45px;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 18px;
+    color: white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid cyan;
+    outline: none;
+    margin-bottom: 16px;
+}
+.nada{
+    margin-bottom: 0;
+}
+.btn{
+    outline: none;
+    border: none;
+    width: 150px;
+    height: 35px;
+    margin-top: 15px;
+    color: white;
+    background-color: rgba(45, 55, 58, 0.836);
+    border-radius: 10px;
+    transition: background-color .3s ease;
+}
+.btn:hover{
+    background-color: rgb(30, 42, 46);
+}
+.close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.pont{
+    margin: 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.box{
+    width: 90%;
+    height: 230px;
+    border-radius: 20px;
+    background-color: #333333e8;
+    margin: 5px;
+    order: inherit;
+    position: relative;
+}
+.j1{
+    display: flex;
+    align-items: center;
+    color: white;
+    margin: 10px;
+    margin-bottom: 30px;
+}
+.j2{
+    margin: 0 30px;
+}
+.img1{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+.nome{
+    margin-left: 10px;
+    margin-right: 100px;
+}
+.a{
+    color: blue;
+}
+.nome1{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 15px;
+
+}
+.nome2{
+    position: absolute;
+    right: 0;
+    margin: 15px;
+    margin-top: 0;
+    margin-right: 30px;
+    cursor: pointer;
+}
+.lol{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    height: 552px;
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.836);
+    border-radius: 20px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    overflow-y: scroll;
+    margin-left: 46px;
+}
+.lol2{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    height: 552px;
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.836);
+    border-radius: 20px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    overflow-y: scroll;
+    margin-right: 46px;
+}
+.some{
+    margin: 0 30px;
+    display: none;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 6;
+}
+.mobile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    display: none;
+}
+.fa-mobile{
+    color: white;
+    font-size: 235px;
+}
+.lol::-webkit-scrollbar{
+    display: none;
+}
+.lol2::-webkit-scrollbar{
+    display: none;
+}
+.infos{
+    display: flex;
+    margin: 0 45px;
+    margin-bottom: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.ne1{
+    color: white;
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+.p{
+    color: white;
+    font-size: 25px;
+    max-width: 652px;
+}
+.i{
+    margin-right: 150px;
+}
+.img3{
+    width: 250px;
+    height: 250px;
+    transition: transform .3s ease;
+}
+.img3:hover{
+    transform: rotate(-50deg);
+}
+.in{
+    flex-direction: column;
+}
+.img4{
+    width: 150px;
+    height: 150px;
+}
+.ne2{
+    text-decoration: none;
+    font-size: 30px;
+    transition: transform .6s ease;
+}
+.ne3:hover{
+
+    transform: translateY(-10px);
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.781);
+}
+footer h3{
+    color: white;
+}
+.backto{
+    position: fixed;
+    right: 0;
+    bottom:-1000px;
+    width: 45px;
+    height: 45px;
+    background-color: rgba(44, 51, 51, 0);
+    border: 0.5px solid white;
+    margin: 15px;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .6s ease;
+}
+.fa-arrow-up{
+    color: white;
+    font-size: 30px;
+}
+@media(max-width:1125px){
+    .lol,.lol2{
+        width: 250px;
+    }
+}
+@media(max-width:950px){
+    header{
+        display: none;
+    }
+    .some{
+        display: flex;
+    }
+    .mobile{
+        display: flex;
+    }
+    .infos{
+        display: none;
+    }
+    .some1{
+        display: none;
+    }
+}
